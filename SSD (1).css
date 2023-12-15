@@ -1,0 +1,153 @@
+section {
+  width: 50%;
+  float: left;
+}
+
+body {
+  background-color: #01012e;
+  margin: 0;
+}
+
+.Tombol {
+  text-align: right;
+  color: white;
+}
+
+
+.seven-segment {
+  background-color: #01012e;
+  width: 120px;
+  height: 180px;
+  position: relative;
+}
+
+
+.segment {
+  border: 10px solid #23c5e283;
+  width: 0;
+  height: 46px;
+  position: absolute;
+  box-sizing: border-box;
+}
+
+
+.segLit {
+  border-color: rgb(59, 233, 111);
+}
+
+
+.segment::before,
+.segment::after {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px;
+  border-color: transparent;
+  position: absolute;
+  content: "";
+}
+
+
+#G::before,
+#A::before,
+#D::before {
+  border-left-width: 0;
+  border-right-color: inherit;
+  top: -10px;
+  left: -20px;
+}
+
+#G::after,
+#A::after,
+#D::after {
+  border-right-width: 0;
+  border-left-color: inherit;
+  top: -10px;
+  right: -20px;
+}
+
+
+#C::before,
+#F::before,
+#E::before,
+#B::before {
+  border-top-width: 0;
+  border-bottom-color: inherit;
+  top: -20px;
+  left: -10px;
+}
+
+#C::after,
+#F::after,
+#E::after,
+#B::after {
+  border-bottom-width: 0;
+  border-top-color: inherit;
+  bottom: -20px;
+  left: -10px;
+}
+
+
+#G,
+#A,
+#D {
+  width: 56px;
+  height: 0;
+}
+
+#C,
+#F {
+  right: 10px;
+}
+
+#G,
+#A,
+#D {
+  left: 32px;
+}
+
+#E,
+#B {
+  left: 10px;
+}
+
+#D {
+  top: 80px;
+}
+
+#G {
+  bottom: 10px;
+}
+
+#A {
+  top: 10px;
+}
+
+#C,
+#B {
+  top: 32px;
+}
+
+#F,
+#E {
+  bottom: 32px;
+}
+
+
+table {
+  margin-top: 20px;
+  border-collapse: collapse;
+  width: 100%;
+  background-color: #ceeef7;
+}
+
+th,
+td {
+  border: 1px solid #000000;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #f2f2f2;
+}
